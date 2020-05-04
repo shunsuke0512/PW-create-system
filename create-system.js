@@ -1,5 +1,7 @@
-const min = 1000 ;
-const max = 9999 ;
+let random = new Uint32Array(5);
+window.crypto.getRandomValues(random);
 
-const random = Math.floor( Math.random() * (max + 1 - min) ) + min ;
-console.log(random);
+console.log("Your lucky numbers:");
+for (let i = 0; i < array.length; i++) {
+    console.log(random[i]);
+}
